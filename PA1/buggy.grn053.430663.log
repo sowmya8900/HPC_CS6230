@@ -1,0 +1,3 @@
+*** Assigned Granite Node:  grn053
+Setting number of threads in parallel region to: 4
+Correctness check failed for parallel version; 100 errors

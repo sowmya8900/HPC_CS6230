@@ -1,0 +1,23 @@
+*** Assigned Granite Node:  grn053
+ 
+Compiling and executing trmm_par_i
+Matrix Size = 1024; NTrials=10
+Reference sequential code performance in GFLOPS Min: 0.49; Max: 0.52
+Max Threads (from omp_get_max_threads) = 128
+Performance (Best & Worst) of parallelized version: GFLOPS on 1/2/4/8/16/32/64/127/128 threads
+Best Performance (GFLOPS): 0.77 0.94 1.42 2.26 3.04 6.79 16.09 25.94 28.56 
+Worst Performance (GFLOPS): 0.49 0.94 1.41 2.13 2.56 4.11 10.98 22.44 13.79 
+ 
+Compiling and executing trmm_par_j
+Matrix Size = 1024; NTrials=10
+Reference sequential code performance in GFLOPS Min: 0.71; Max: 0.81
+Max Threads (from omp_get_max_threads) = 128
+Performance (Best & Worst) of parallelized version: GFLOPS on 1/2/4/8/16/32/64/127/128 threads
+Best Performance (GFLOPS): 0.78 0.94 1.12 2.47 4.88 8.86 16.53 22.72 22.74 
+Worst Performance (GFLOPS): 0.78 0.71 0.97 1.83 2.79 4.43 7.47 19.93 22.32 
+ 
+Compiling and executing trmm_par_k
+Matrix Size = 1024; NTrials=10
+Reference sequential code performance in GFLOPS Min: 0.60; Max: 0.65
+Max Threads (from omp_get_max_threads) = 128
+Error when executing on 2 threads; 445352 Differences found over threshold 0.000000; Max Diff = 1968701312.000000

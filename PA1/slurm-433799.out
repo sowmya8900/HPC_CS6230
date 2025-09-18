@@ -1,0 +1,73 @@
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
++ export OUTFILE=trmm_stat_dyn_j_.grn052.433799.log
++ OUTFILE=trmm_stat_dyn_j_.grn052.433799.log
++ tee -a trmm_stat_dyn_j_.grn052.433799.log
++ echo '*** Assigned Granite Node: ' grn052
+*** Assigned Granite Node:  grn052
++ echo ' '
++ tee -a trmm_stat_dyn_j_.grn052.433799.log
+ 
++ echo 'Compiling and executing trmm_par_j_s1'
++ tee -a trmm_stat_dyn_j_.grn052.433799.log
+Compiling and executing trmm_par_j_s1
++ cc -O3 -fopenmp -o trmm_par_j_s1 trmm_main.c trmm_ref.c trmm_par_j_s1.c
++ ./trmm_par_j_s1
++ tee -a -a trmm_stat_dyn_j_.grn052.433799.log
+Matrix Size = 1024; NTrials=10
+Reference sequential code performance in GFLOPS Min: 0.50; Max: 0.53
+Max Threads (from omp_get_max_threads) = 128
+Performance (Best & Worst) of parallelized version: GFLOPS on 1/2/4/8/16/32/64/127/128 threads
+Best Performance (GFLOPS): 0.77 1.61 2.43 5.33 8.74 13.72 21.14 23.61 23.90 
+Worst Performance (GFLOPS): 0.51 1.13 1.83 3.31 5.22 7.81 11.32 19.31 23.11 
++ echo ' '
++ tee -a trmm_stat_dyn_j_.grn052.433799.log
+ 
++ echo 'Compiling and executing trmm_par_j_s4'
++ tee -a trmm_stat_dyn_j_.grn052.433799.log
+Compiling and executing trmm_par_j_s4
++ cc -O3 -fopenmp -o trmm_par_j_s4 trmm_main.c trmm_ref.c trmm_par_j_s4.c
++ ./trmm_par_j_s4
++ tee -a -a trmm_stat_dyn_j_.grn052.433799.log
+Matrix Size = 1024; NTrials=10
+Reference sequential code performance in GFLOPS Min: 0.70; Max: 0.81
+Max Threads (from omp_get_max_threads) = 128
+Performance (Best & Worst) of parallelized version: GFLOPS on 1/2/4/8/16/32/64/127/128 threads
+Best Performance (GFLOPS): 0.78 1.88 2.44 5.37 9.54 15.92 23.91 24.41 24.15 
+Worst Performance (GFLOPS): 0.78 1.25 1.81 3.32 5.17 8.18 12.17 21.30 23.67 
++ echo ' '
++ tee -a trmm_stat_dyn_j_.grn052.433799.log
+ 
++ echo 'Compiling and executing trmm_par_j_d1'
++ tee -a trmm_stat_dyn_j_.grn052.433799.log
+Compiling and executing trmm_par_j_d1
++ cc -O3 -fopenmp -o trmm_par_j_d1 trmm_main.c trmm_ref.c trmm_par_j_d1.c
++ ./trmm_par_j_d1
++ tee -a -a trmm_stat_dyn_j_.grn052.433799.log
+Matrix Size = 1024; NTrials=10
+Reference sequential code performance in GFLOPS Min: 0.71; Max: 0.82
+Max Threads (from omp_get_max_threads) = 128
+Performance (Best & Worst) of parallelized version: GFLOPS on 1/2/4/8/16/32/64/127/128 threads
+Best Performance (GFLOPS): 0.77 1.48 2.05 3.16 4.87 5.21 7.08 7.48 7.55 
+Worst Performance (GFLOPS): 0.77 1.36 1.78 2.68 3.84 4.44 5.37 7.04 7.33 
++ echo ' '
++ tee -a trmm_stat_dyn_j_.grn052.433799.log
+ 
++ echo 'Compiling and executing trmm_par_j_d4'
++ tee -a trmm_stat_dyn_j_.grn052.433799.log
+Compiling and executing trmm_par_j_d4
++ cc -O3 -fopenmp -o trmm_par_j_d4 trmm_main.c trmm_ref.c trmm_par_j_d4.c
++ ./trmm_par_j_d4
++ tee -a -a trmm_stat_dyn_j_.grn052.433799.log
+Matrix Size = 1024; NTrials=10
+Reference sequential code performance in GFLOPS Min: 0.78; Max: 0.82
+Max Threads (from omp_get_max_threads) = 128
+Performance (Best & Worst) of parallelized version: GFLOPS on 1/2/4/8/16/32/64/127/128 threads
+Best Performance (GFLOPS): 0.79 1.82 2.78 5.16 9.04 11.65 14.77 12.78 12.89 
+Worst Performance (GFLOPS): 0.79 1.54 2.33 3.89 6.06 7.86 9.08 11.76 11.37 

@@ -1,0 +1,18 @@
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
++ tee -a buggy.grn053.430663.log
++ echo '*** Assigned Granite Node: ' grn053
+*** Assigned Granite Node:  grn053
++ echo ' '
+ 
++ cc -O3 -fopenmp -o buggy buggy.c
++ ./buggy
++ tee -a buggy.grn053.430663.log
+Setting number of threads in parallel region to: 4
+Correctness check failed for parallel version; 100 errors
