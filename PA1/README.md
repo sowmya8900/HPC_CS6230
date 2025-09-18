@@ -84,3 +84,5 @@ Observations:
 - The "best" and "worst" runs converge with increasing threads for all variants, indicating improved stability in scaling at higher concurrency.
 - For both static and dynamic, increasing chunk size from 1 to 4 improves performance, but the effect is more pronounced in static scheduling.
 - The diminishing returns beyond 64 threads suggest overheads such as thread contention or memory bandwidth limitations in this environment.
+
+Results can be seen in `trmm_stat_dyn_j_.grn052.433799.log` file.
