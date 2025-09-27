@@ -1,0 +1,9 @@
+*** Assigned Granite Node:  grn052
+ 
+Compiling and executing mm_par_i4k4
+Matrix Size = 1152; NTrials=10
+Reference sequential code performance in GFLOPS Min: 1.50; Max: 1.77
+Max Threads (from omp_get_max_threads) = 128
+Performance (Best & Worst) of parallelized version: GFLOPS on 1/2/4/8/16/32/64/127/128 threads
+Best Performance (GFLOPS): 0.71 1.19 2.06 3.46 5.57 20.74 36.67 37.34 37.51 
+Worst Performance (GFLOPS): 0.64 1.14 2.03 3.23 5.24 8.71 16.76 28.39 28.00 

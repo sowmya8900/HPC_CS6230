@@ -1,0 +1,28 @@
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
++ export OUTFILE=trmm_par_tiled_i2k2.grn053.451049.log
++ OUTFILE=trmm_par_tiled_i2k2.grn053.451049.log
++ tee -a trmm_par_tiled_i2k2.grn053.451049.log
++ echo '*** Assigned Granite Node: ' grn053
+*** Assigned Granite Node:  grn053
++ echo ' '
++ tee -a trmm_par_tiled_i2k2.grn053.451049.log
+ 
++ echo 'Compiling and executing trmm_par_tiled_i2k2'
++ tee -a trmm_par_tiled_i2k2.grn053.451049.log
+Compiling and executing trmm_par_tiled_i2k2
++ cc -O3 -fopenmp -o trmm_par_tiled_i2k2 mm_main.c mm_ref.c trmm_par_tiled_i2k2.c
++ ./trmm_par_tiled_i2k2
++ tee -a -a trmm_par_tiled_i2k2.grn053.451049.log
+Matrix Size = 1152; NTrials=10
+Reference sequential code performance in GFLOPS Min: 1.55; Max: 1.79
+Max Threads (from omp_get_max_threads) = 128
+Performance (Best & Worst) of parallelized version: GFLOPS on 1/2/4/8/16/32/64/127/128 threads
+Best Performance (GFLOPS): 1.76 2.61 4.21 6.82 20.60 30.79 52.33 50.00 51.94 
+Worst Performance (GFLOPS): 1.75 2.53 4.06 6.25 9.25 21.78 20.98 36.27 40.01 

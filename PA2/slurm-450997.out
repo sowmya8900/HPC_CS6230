@@ -1,0 +1,28 @@
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
++ export OUTFILE=mm_per.grn052.450997.log
++ OUTFILE=mm_per.grn052.450997.log
++ tee -a mm_per.grn052.450997.log
++ echo '*** Assigned Granite Node: ' grn052
+*** Assigned Granite Node:  grn052
++ echo ' '
++ tee -a mm_per.grn052.450997.log
+ 
++ echo 'Compiling and executing mm_par_i4k4'
++ tee -a mm_per.grn052.450997.log
+Compiling and executing mm_par_i4k4
++ cc -O3 -fopenmp -o mm_par_i4k4 mm_main.c mm_ref.c mm_par_i4k4.c
++ ./mm_par_i4k4
++ tee -a -a mm_per.grn052.450997.log
+Matrix Size = 1152; NTrials=10
+Reference sequential code performance in GFLOPS Min: 1.50; Max: 1.77
+Max Threads (from omp_get_max_threads) = 128
+Performance (Best & Worst) of parallelized version: GFLOPS on 1/2/4/8/16/32/64/127/128 threads
+Best Performance (GFLOPS): 0.71 1.19 2.06 3.46 5.57 20.74 36.67 37.34 37.51 
+Worst Performance (GFLOPS): 0.64 1.14 2.03 3.23 5.24 8.71 16.76 28.39 28.00 

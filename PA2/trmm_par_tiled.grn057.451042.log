@@ -1,0 +1,9 @@
+*** Assigned Granite Node:  grn057
+ 
+Compiling and executing trmm_par_tiled
+Matrix Size = 1152; NTrials=10
+Reference sequential code performance in GFLOPS Min: 1.52; Max: 1.75
+Max Threads (from omp_get_max_threads) = 128
+Performance (Best & Worst) of parallelized version: GFLOPS on 1/2/4/8/16/32/64/127/128 threads
+Best Performance (GFLOPS): 1.89 3.20 4.42 13.46 22.57 34.26 56.87 57.26 57.68 
+Worst Performance (GFLOPS): 1.87 2.65 4.25 6.51 13.19 23.73 24.37 43.31 56.00 
