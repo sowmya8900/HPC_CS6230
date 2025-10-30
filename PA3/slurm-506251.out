@@ -1,0 +1,74 @@
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
++ export OUTFILE=PA3.grn054.506251.log
++ OUTFILE=PA3.grn054.506251.log
++ tee -a PA3.grn054.506251.log
++ echo '*** Assigned Granite Node: ' grn054
+*** Assigned Granite Node:  grn054
++ echo ' '
++ tee -a PA3.grn054.506251.log
+ 
++ echo 'Compiling and executing vec1'
++ tee -a PA3.grn054.506251.log
+Compiling and executing vec1
++ clang -O3 -mavx512f -o vec1 vec1_main.c vec1a.c vec1b.c vec1c.c
++ ./vec1
++ tee -a -a PA3.grn054.506251.log
+Matrix Size = 16384; NTrials=5
+Performance (GFLOPS) for stmt 'w[i] = w[i]+1': Min: 3.21; Max: 3.26
+Performance (GFLOPS) for stmt 'w[i] = w[i+1]+1': Min: 3.21; Max: 3.23
+Performance (GFLOPS) for stmt 'w[i] = w[i-1]+1': Min: 0.39; Max: 0.40
++ echo ' '
++ tee -a PA3.grn054.506251.log
+ 
++ echo 'Compiling and executing vec2'
++ tee -a PA3.grn054.506251.log
+Compiling and executing vec2
++ clang -O3 -mavx512f -o vec2 vec2_main.c vec2_ref.c vec2_opt.c
++ ./vec2
++ tee -a -a PA3.grn054.506251.log
+Matrix Size = 16384; NTrials=5
+Reference code performance in GFLOPS Min: 0.11; Max: 0.14
+Optimized code performance in GFLOPS Min: 4.94; Max: 4.97
++ echo ' '
++ tee -a PA3.grn054.506251.log
+ 
++ echo 'Compiling and executing vec3'
++ tee -a PA3.grn054.506251.log
+Compiling and executing vec3
++ clang -O3 -mavx512f -o vec3 vec3_main.c vec3_ref.c vec3_opt.c
++ ./vec3
++ tee -a -a PA3.grn054.506251.log
+Matrix Size = 16384; NTrials=5
+Reference code performance in GFLOPS Min: 0.57; Max: 0.59
+Optimized code performance in GFLOPS Min: 2.40; Max: 2.43
++ echo ' '
++ tee -a PA3.grn054.506251.log
+ 
++ echo 'Compiling and executing vec4'
++ tee -a PA3.grn054.506251.log
+Compiling and executing vec4
++ clang -O3 -mavx512f -o vec4 vec4_main.c vec4_ref.c vec4_opt.c
++ ./vec4
++ tee -a -a PA3.grn054.506251.log
+Matrix Size = 16384; NTrials=5
+Reference code performance in GFLOPS Min: 0.58; Max: 0.59
+Optimized code performance in GFLOPS Min: 0.58; Max: 0.60
++ echo ' '
++ tee -a PA3.grn054.506251.log
+ 
++ echo 'Compiling and executing vec5'
++ tee -a PA3.grn054.506251.log
+Compiling and executing vec5
++ clang -O3 -mavx512f -o vec5 vec5_main.c vec5_ref.c vec5_opt.c
++ ./vec5
++ tee -a -a PA3.grn054.506251.log
+Matrix Size = 256; NTrials=5 
+Reference sequential code performance in GFLOPS Min: 0.50; Max: 0.64
+Worst/Best Performance of Optimized Version (GFLOPS): 19.59/20.02
