@@ -1,0 +1,21 @@
+=== Running mtmt ===
+Matrix Size:1024, blockDim.x: 16, blockDim.y: 16; TBsize: 256; Time: 0.37 msec; Performance: 5756.46 GFLOPs
+
+=== Running mtmt-k4 ===
+Matrix Size:1024, blockDim.x: 16, blockDim.y: 16; TBsize: 256; Time: 0.37 msec; Performance: 5750.55 GFLOPs
+
+=== Running mtmt-j4 ===
+Matrix Size:1024, blockDim.x: 16, blockDim.y: 16; TBsize: 256; Time: 0.31 msec; Performance: 6847.14 GFLOPs
+
+=== Running mtmt-i4 ===
+Matrix Size:1024, blockDim.x: 16, blockDim.y: 16; TBsize: 256; Time: 0.30 msec; Performance: 7150.65 GFLOPs
+
+=== Running mtmt-i4j4 ===
+Matrix Size:1024, blockDim.x: 16, blockDim.y: 16; TBsize: 256; Time: 0.20 msec; Performance: 10662.36 GFLOPs
+
+=== Running mtmt-sm ===
+Matrix Size:1024, blockDim.x: 16, blockDim.y: 16; TBsize: 256; Time: 0.28 msec; Performance: 7737.68 GFLOPs
+
+=== Running mtmt-sm-i4j4 ===
+Matrix Size:1024, blockDim.x: 16, blockDim.y: 16; TBsize: 256; Time: 0.13 msec; Performance: 16085.54 GFLOPs
+
