@@ -3,7 +3,7 @@
 ## Q1: Ring communication
 
 ### Blocking ring with deadlock
-The original `ring.c` used blocking `MPI_Send`/`MPI_Recv` that deadlocks once messages exceed the MPI eager threshold (rendezvous mode requires the matching `Recv` to be posted). The largest message size that runs without deadlock is 4096 doubles (≈ 32 KB).
+The original `ring.c` used blocking `MPI_Send`/`MPI_Recv` that deadlocks once messages exceed the MPI eager threshold (rendezvous mode requires the matching `Recv` to be posted). The largest message size that runs without deadlock is 4096 doubles ($\approx$ 32 KB).
 
 ```
 *** Assigned Granite Node:  grn059
@@ -30,7 +30,7 @@ Message Size = 1048576; 4.176 Gbytes/sec; Time = 0.032 sec
 ```
 ---
 
-## Q2: Ping-Pong and α–β model
+## Q2: Ping-Pong and $\alpha$–$\beta$ model
 
 ### Single-node results
 | **Msg (doubles)** | **Bytes** | **Time/message (µs)** | **Bandwidth (GB/s)** |
