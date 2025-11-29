@@ -1,0 +1,9 @@
+*** Assigned Granite Nodes:  grn[059-060]
+Message length: 1 , GBytes/sec: 0.002 , NIters: 99009 , Time taken per message (microsecs): 3.553 , Total time (secs): 1.407
+Message length: 8 , GBytes/sec: 0.018 , NIters: 92592 , Time taken per message (microsecs): 3.488 , Total time (secs): 1.292
+Message length: 64 , GBytes/sec: 0.109 , NIters: 60975 , Time taken per message (microsecs): 4.677 , Total time (secs): 1.141
+Message length: 512 , GBytes/sec: 0.724 , NIters: 16339 , Time taken per message (microsecs): 5.660 , Total time (secs): 0.370
+Message length: 4096 , GBytes/sec: 3.948 , NIters: 2383 , Time taken per message (microsecs): 8.300 , Total time (secs): 0.079
+Message length: 32768 , GBytes/sec: 7.286 , NIters: 304 , Time taken per message (microsecs): 35.978 , Total time (secs): 0.044
+Message length: 262144 , GBytes/sec: 10.090 , NIters: 38 , Time taken per message (microsecs): 207.842 , Total time (secs): 0.032
+Message length: 1048576 , GBytes/sec: 9.424 , NIters: 9 , Time taken per message (microsecs): 890.102 , Total time (secs): 0.032

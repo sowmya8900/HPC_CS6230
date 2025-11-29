@@ -1,0 +1,125 @@
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
++ tee ring.grn059.592097.log
++ echo '*** Assigned Granite Node: ' grn059
+*** Assigned Granite Node:  grn059
++ module load openmpi
+++ /uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8/libexec/lmod bash load openmpi
++ eval '__LMOD_REF_COUNT_ACLOCAL_PATH=/usr/share/aclocal:1;' export '__LMOD_REF_COUNT_ACLOCAL_PATH;' 'ACLOCAL_PATH=/usr/share/aclocal;' export 'ACLOCAL_PATH;' '__LMOD_REF_COUNT_CMAKE_PREFIX_PATH=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih:1;' export '__LMOD_REF_COUNT_CMAKE_PREFIX_PATH;' 'CMAKE_PREFIX_PATH=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih;' export 'CMAKE_PREFIX_PATH;' '__LMOD_REF_COUNT_CPLUS_INCLUDE_PATH=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/include:1;' export '__LMOD_REF_COUNT_CPLUS_INCLUDE_PATH;' 'CPLUS_INCLUDE_PATH=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/include;' export 'CPLUS_INCLUDE_PATH;' '__LMOD_REF_COUNT_C_INCLUDE_PATH=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/include:1;' export '__LMOD_REF_COUNT_C_INCLUDE_PATH;' 'C_INCLUDE_PATH=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/include;' export 'C_INCLUDE_PATH;' '__LMOD_REF_COUNT_INCLUDE=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/include:1;' export '__LMOD_REF_COUNT_INCLUDE;' 'INCLUDE=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/include;' export 'INCLUDE;' '__LMOD_REF_COUNT_LD_LIBRARY_PATH=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/lib:1\;/uufs/granite/sys/installdir/slurm/std/lib:1;' export '__LMOD_REF_COUNT_LD_LIBRARY_PATH;' 'LD_LIBRARY_PATH=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/lib:/uufs/granite/sys/installdir/slurm/std/lib;' export 'LD_LIBRARY_PATH;' '__LMOD_REF_COUNT_LIBRARY_PATH=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/lib:1;' export '__LMOD_REF_COUNT_LIBRARY_PATH;' 'LIBRARY_PATH=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/lib;' export 'LIBRARY_PATH;' 'LMOD_FAMILY_MPI=openmpi;' export 'LMOD_FAMILY_MPI;' 'LMOD_FAMILY_MPI_VERSION=5.0.8;' export 'LMOD_FAMILY_MPI_VERSION;' 'LMOD_MPI_NAME=openmpi;' export 'LMOD_MPI_NAME;' 'LMOD_MPI_VERSION=5.0.8-o6237oj;' export 'LMOD_MPI_VERSION;' '__LMOD_REF_COUNT_LOADEDMODULES=chpc/1.0:1\;zlib/1.2.11:1\;openmpi/5.0.8:1;' export '__LMOD_REF_COUNT_LOADEDMODULES;' 'LOADEDMODULES=chpc/1.0:zlib/1.2.11:openmpi/5.0.8;' export 'LOADEDMODULES;' '__LMOD_REF_COUNT_MANPATH=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/share/man:1\;/usr/share/man:2\;/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8/share/man:1\;/usr/local/share/man:1\;/uufs/granite/sys/installdir/slurm/std/share/man:2;' export '__LMOD_REF_COUNT_MANPATH;' 'MANPATH=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/share/man:/usr/share/man:/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8/share/man:/usr/local/share/man:/uufs/granite/sys/installdir/slurm/std/share/man::;' export 'MANPATH;' '__LMOD_REF_COUNT_MODULEPATH=/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/MPI/linux-rocky8-skylake_avx512/gcc/8.5.0/openmpi/5.0.8:1\;/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/MPI/gcc/8.5.0/openmpi/5.0.8:1\;/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/MPI/linux-rocky8-nehalem/Core/openmpi/5.0.8:1\;/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/Core/linux-rocky8-nehalem:1\;/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/Core/linux-rocky8-x86_64:1\;/usr/share/Modules/modulefiles:1\;/etc/modulefiles:1\;/usr/share/modulefiles:1\;/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Linux:1\;/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Core:1\;/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8/modulefiles/Core:1;' export '__LMOD_REF_COUNT_MODULEPATH;' 'MODULEPATH=/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/MPI/linux-rocky8-skylake_avx512/gcc/8.5.0/openmpi/5.0.8:/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/MPI/gcc/8.5.0/openmpi/5.0.8:/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/MPI/linux-rocky8-nehalem/Core/openmpi/5.0.8:/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/Core/linux-rocky8-nehalem:/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/Core/linux-rocky8-x86_64:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles:/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Linux:/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Core:/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8/modulefiles/Core;' export 'MODULEPATH;' 'MPICC=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/bin/mpicc;' export 'MPICC;' 'MPICXX=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/bin/mpic++;' export 'MPICXX;' 'MPIF77=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/bin/mpif77;' export 'MPIF77;' 'MPIF90=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/bin/mpif90;' export 'MPIF90;' 'MPIFC=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/bin/mpifort;' export 'MPIFC;' 'OMPI_MCA_pml=ucx;' export 'OMPI_MCA_pml;' 'OPENMPI_ROOT=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih;' export 'OPENMPI_ROOT;' '__LMOD_REF_COUNT_PATH=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/bin:1\;/uufs/chpc.utah.edu/sys/bin:1\;/usr/share/Modules/bin:1\;/usr/local/bin:1\;/usr/bin:1\;/usr/local/sbin:1\;/usr/sbin:1\;/uufs/chpc.utah.edu/common/home/u1591673/.dotnet/tools:1\;/uufs/granite/sys/installdir/slurm/std/bin:1;' export '__LMOD_REF_COUNT_PATH;' 'PATH=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/bin:/uufs/chpc.utah.edu/sys/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/uufs/chpc.utah.edu/common/home/u1591673/.dotnet/tools:/uufs/granite/sys/installdir/slurm/std/bin;' export 'PATH;' '__LMOD_REF_COUNT_PKG_CONFIG_PATH=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/lib/pkgconfig:1\;/usr/share/pkgconfig:1\;/usr/lib64/pkgconfig:1;' export '__LMOD_REF_COUNT_PKG_CONFIG_PATH;' 'PKG_CONFIG_PATH=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/lib/pkgconfig:/usr/share/pkgconfig:/usr/lib64/pkgconfig;' export 'PKG_CONFIG_PATH;' 'UCX_NET_DEVICES=bnxt_re0:1;' export 'UCX_NET_DEVICES;' 'ZLIB_ROOT=/usr;' export 'ZLIB_ROOT;' '__LMOD_REF_COUNT__LMFILES_=/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Core/chpc/1.0.lua:1\;/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/Core/linux-rocky8-nehalem/zlib/1.2.11.lua:1\;/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/Core/linux-rocky8-nehalem/openmpi/5.0.8.lua:1;' export '__LMOD_REF_COUNT__LMFILES_;' '_LMFILES_=/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Core/chpc/1.0.lua:/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/Core/linux-rocky8-nehalem/zlib/1.2.11.lua:/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/Core/linux-rocky8-nehalem/openmpi/5.0.8.lua;' export '_LMFILES_;' '_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0gewptcGkgPSAib3Blbm1waSIsCn0sCm1UID0gewpjaHBjID0gewpmbiA9ICIvdXVmcy9jaHBjLnV0YWguZWR1L3N5cy9tb2R1bGVmaWxlcy9DSFBDLXI4L0NvcmUvY2hwYy8xLjAubHVhIiwKZnVsbE5hbWUgPSAiY2hwYy8xLjAiLApsb2FkT3JkZXIgPSAxLApwcm9wVCA9IHsKbG1vZCA9IHsKc3RpY2t5ID0gMSwKfSwKfSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJjaHBjIiwKd1YgPSAiMDAwMDAwMDAxLip6ZmluYWwiLAp9LApvcGVubXBpID0gewpmbiA9ICIv;' export '_ModuleTable001_;' '_ModuleTable002_=dXVmcy9jaHBjLnV0YWguZWR1L3N5cy9tb2R1bGVmaWxlcy9zcGFjay9saW51eC1yb2NreTgteDg2XzY0L0NvcmUvbGludXgtcm9ja3k4LW5laGFsZW0vb3Blbm1waS81LjAuOC5sdWEiLApmdWxsTmFtZSA9ICJvcGVubXBpLzUuMC44IiwKbG9hZE9yZGVyID0gMywKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJvcGVubXBpIiwKd1YgPSAiMDAwMDAwMDA1LjAwMDAwMDAwMC4wMDAwMDAwMDguKnpmaW5hbCIsCn0sCnpsaWIgPSB7CmZuID0gIi91dWZzL2NocGMudXRhaC5lZHUvc3lzL21vZHVsZWZpbGVzL3NwYWNrL2xpbnV4LXJvY2t5OC14ODZfNjQvQ29yZS9saW51eC1yb2NreTgtbmVoYWxlbS96bGliLzEuMi4xMS5s;' export '_ModuleTable002_;' '_ModuleTable003_=dWEiLApmdWxsTmFtZSA9ICJ6bGliLzEuMi4xMSIsCmxvYWRPcmRlciA9IDIsCnByb3BUID0ge30sCnJlZl9jb3VudCA9IDEsCnN0YWNrRGVwdGggPSAxLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiemxpYi8xLjIuMTEiLAp3ViA9ICIwMDAwMDAwMDEuMDAwMDAwMDAyLjAwMDAwMDAxMS4qemZpbmFsIiwKfSwKfSwKbXBhdGhBID0gewoKIi91dWZzL2NocGMudXRhaC5lZHUvc3lzL21vZHVsZWZpbGVzL3NwYWNrL2xpbnV4LXJvY2t5OC14ODZfNjQvTVBJL2xpbnV4LXJvY2t5OC1za3lsYWtlX2F2eDUxMi9nY2MvOC41LjAvb3Blbm1waS81LjAuOCIKLCAiL3V1ZnMvY2hwYy51dGFoLmVkdS9zeXMvbW9kdWxlZmlsZXMvQ0hQQy1yOC9NUEkvZ2NjLzguNS4wL29wZW5t;' export '_ModuleTable003_;' '_ModuleTable004_=cGkvNS4wLjgiCiwgIi91dWZzL2NocGMudXRhaC5lZHUvc3lzL21vZHVsZWZpbGVzL3NwYWNrL2xpbnV4LXJvY2t5OC14ODZfNjQvTVBJL2xpbnV4LXJvY2t5OC1uZWhhbGVtL0NvcmUvb3Blbm1waS81LjAuOCIKLCAiL3V1ZnMvY2hwYy51dGFoLmVkdS9zeXMvbW9kdWxlZmlsZXMvc3BhY2svbGludXgtcm9ja3k4LXg4Nl82NC9Db3JlL2xpbnV4LXJvY2t5OC1uZWhhbGVtIgosICIvdXVmcy9jaHBjLnV0YWguZWR1L3N5cy9tb2R1bGVmaWxlcy9zcGFjay9saW51eC1yb2NreTgteDg2XzY0L0NvcmUvbGludXgtcm9ja3k4LXg4Nl82NCIKLCAiL3Vzci9zaGFyZS9Nb2R1bGVzL21vZHVsZWZpbGVzIiwgIi9ldGMvbW9kdWxlZmlsZXMiLCAiL3Vzci9zaGFyZS9tb2R1bGVmaWxlcyIK;' export '_ModuleTable004_;' '_ModuleTable005_=LCAiL3V1ZnMvY2hwYy51dGFoLmVkdS9zeXMvbW9kdWxlZmlsZXMvQ0hQQy1yOC9MaW51eCIKLCAiL3V1ZnMvY2hwYy51dGFoLmVkdS9zeXMvbW9kdWxlZmlsZXMvQ0hQQy1yOC9Db3JlIiwgIi91dWZzL2NocGMudXRhaC5lZHUvc3lzL2luc3RhbGxkaXIvbG1vZC84LjYtcjgvbW9kdWxlZmlsZXMvQ29yZSIsCn0sCnN5c3RlbUJhc2VNUEFUSCA9ICIvdXVmcy9jaHBjLnV0YWguZWR1L3N5cy9tb2R1bGVmaWxlcy9zcGFjay9saW51eC1yb2NreTgteDg2XzY0L0NvcmUvbGludXgtcm9ja3k4LW5laGFsZW06L3V1ZnMvY2hwYy51dGFoLmVkdS9zeXMvbW9kdWxlZmlsZXMvc3BhY2svbGludXgtcm9ja3k4LXg4Nl82NC9Db3JlL2xpbnV4LXJvY2t5OC14ODZfNjQ6L3Vzci9zaGFyZS9N;' export '_ModuleTable005_;' '_ModuleTable006_=b2R1bGVzL21vZHVsZWZpbGVzOi9ldGMvbW9kdWxlZmlsZXM6L3Vzci9zaGFyZS9tb2R1bGVmaWxlczovdXVmcy9jaHBjLnV0YWguZWR1L3N5cy9tb2R1bGVmaWxlcy9DSFBDLXI4L0xpbnV4Oi91dWZzL2NocGMudXRhaC5lZHUvc3lzL21vZHVsZWZpbGVzL0NIUEMtcjgvQ29yZTovdXVmcy9jaHBjLnV0YWguZWR1L3N5cy9pbnN0YWxsZGlyL2xtb2QvOC42LXI4L21vZHVsZWZpbGVzL0NvcmUiLAp9Cg==;' export '_ModuleTable006_;' '_ModuleTable_Sz_=6;' export '_ModuleTable_Sz_;'
+++ __LMOD_REF_COUNT_ACLOCAL_PATH=/usr/share/aclocal:1
+++ export __LMOD_REF_COUNT_ACLOCAL_PATH
+++ ACLOCAL_PATH=/usr/share/aclocal
+++ export ACLOCAL_PATH
+++ __LMOD_REF_COUNT_CMAKE_PREFIX_PATH=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih:1
+++ export __LMOD_REF_COUNT_CMAKE_PREFIX_PATH
+++ CMAKE_PREFIX_PATH=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih
+++ export CMAKE_PREFIX_PATH
+++ __LMOD_REF_COUNT_CPLUS_INCLUDE_PATH=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/include:1
+++ export __LMOD_REF_COUNT_CPLUS_INCLUDE_PATH
+++ CPLUS_INCLUDE_PATH=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/include
+++ export CPLUS_INCLUDE_PATH
+++ __LMOD_REF_COUNT_C_INCLUDE_PATH=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/include:1
+++ export __LMOD_REF_COUNT_C_INCLUDE_PATH
+++ C_INCLUDE_PATH=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/include
+++ export C_INCLUDE_PATH
+++ __LMOD_REF_COUNT_INCLUDE=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/include:1
+++ export __LMOD_REF_COUNT_INCLUDE
+++ INCLUDE=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/include
+++ export INCLUDE
+++ __LMOD_REF_COUNT_LD_LIBRARY_PATH='/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/lib:1;/uufs/granite/sys/installdir/slurm/std/lib:1'
+++ export __LMOD_REF_COUNT_LD_LIBRARY_PATH
+++ LD_LIBRARY_PATH=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/lib:/uufs/granite/sys/installdir/slurm/std/lib
+++ export LD_LIBRARY_PATH
+++ __LMOD_REF_COUNT_LIBRARY_PATH=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/lib:1
+++ export __LMOD_REF_COUNT_LIBRARY_PATH
+++ LIBRARY_PATH=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/lib
+++ export LIBRARY_PATH
+++ LMOD_FAMILY_MPI=openmpi
+++ export LMOD_FAMILY_MPI
+++ LMOD_FAMILY_MPI_VERSION=5.0.8
+++ export LMOD_FAMILY_MPI_VERSION
+++ LMOD_MPI_NAME=openmpi
+++ export LMOD_MPI_NAME
+++ LMOD_MPI_VERSION=5.0.8-o6237oj
+++ export LMOD_MPI_VERSION
+++ __LMOD_REF_COUNT_LOADEDMODULES='chpc/1.0:1;zlib/1.2.11:1;openmpi/5.0.8:1'
+++ export __LMOD_REF_COUNT_LOADEDMODULES
+++ LOADEDMODULES=chpc/1.0:zlib/1.2.11:openmpi/5.0.8
+++ export LOADEDMODULES
+++ __LMOD_REF_COUNT_MANPATH='/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/share/man:1;/usr/share/man:2;/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8/share/man:1;/usr/local/share/man:1;/uufs/granite/sys/installdir/slurm/std/share/man:2'
+++ export __LMOD_REF_COUNT_MANPATH
+++ MANPATH=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/share/man:/usr/share/man:/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8/share/man:/usr/local/share/man:/uufs/granite/sys/installdir/slurm/std/share/man::
+++ export MANPATH
+++ __LMOD_REF_COUNT_MODULEPATH='/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/MPI/linux-rocky8-skylake_avx512/gcc/8.5.0/openmpi/5.0.8:1;/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/MPI/gcc/8.5.0/openmpi/5.0.8:1;/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/MPI/linux-rocky8-nehalem/Core/openmpi/5.0.8:1;/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/Core/linux-rocky8-nehalem:1;/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/Core/linux-rocky8-x86_64:1;/usr/share/Modules/modulefiles:1;/etc/modulefiles:1;/usr/share/modulefiles:1;/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Linux:1;/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Core:1;/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8/modulefiles/Core:1'
+++ export __LMOD_REF_COUNT_MODULEPATH
+++ MODULEPATH=/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/MPI/linux-rocky8-skylake_avx512/gcc/8.5.0/openmpi/5.0.8:/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/MPI/gcc/8.5.0/openmpi/5.0.8:/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/MPI/linux-rocky8-nehalem/Core/openmpi/5.0.8:/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/Core/linux-rocky8-nehalem:/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/Core/linux-rocky8-x86_64:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles:/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Linux:/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Core:/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8/modulefiles/Core
+++ export MODULEPATH
+++ MPICC=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/bin/mpicc
+++ export MPICC
+++ MPICXX=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/bin/mpic++
+++ export MPICXX
+++ MPIF77=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/bin/mpif77
+++ export MPIF77
+++ MPIF90=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/bin/mpif90
+++ export MPIF90
+++ MPIFC=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/bin/mpifort
+++ export MPIFC
+++ OMPI_MCA_pml=ucx
+++ export OMPI_MCA_pml
+++ OPENMPI_ROOT=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih
+++ export OPENMPI_ROOT
+++ __LMOD_REF_COUNT_PATH='/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/bin:1;/uufs/chpc.utah.edu/sys/bin:1;/usr/share/Modules/bin:1;/usr/local/bin:1;/usr/bin:1;/usr/local/sbin:1;/usr/sbin:1;/uufs/chpc.utah.edu/common/home/u1591673/.dotnet/tools:1;/uufs/granite/sys/installdir/slurm/std/bin:1'
+++ export __LMOD_REF_COUNT_PATH
+++ PATH=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/bin:/uufs/chpc.utah.edu/sys/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/uufs/chpc.utah.edu/common/home/u1591673/.dotnet/tools:/uufs/granite/sys/installdir/slurm/std/bin
+++ export PATH
+++ __LMOD_REF_COUNT_PKG_CONFIG_PATH='/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/lib/pkgconfig:1;/usr/share/pkgconfig:1;/usr/lib64/pkgconfig:1'
+++ export __LMOD_REF_COUNT_PKG_CONFIG_PATH
+++ PKG_CONFIG_PATH=/uufs/chpc.utah.edu/sys/spack/v10/linux-rocky8-nehalem/gcc-8.5.0/openmpi-5.0.8-o6237oj2qwq6zbfhpihhrplsruvmrcih/lib/pkgconfig:/usr/share/pkgconfig:/usr/lib64/pkgconfig
+++ export PKG_CONFIG_PATH
+++ UCX_NET_DEVICES=bnxt_re0:1
+++ export UCX_NET_DEVICES
+++ ZLIB_ROOT=/usr
+++ export ZLIB_ROOT
+++ __LMOD_REF_COUNT__LMFILES_='/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Core/chpc/1.0.lua:1;/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/Core/linux-rocky8-nehalem/zlib/1.2.11.lua:1;/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/Core/linux-rocky8-nehalem/openmpi/5.0.8.lua:1'
+++ export __LMOD_REF_COUNT__LMFILES_
+++ _LMFILES_=/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Core/chpc/1.0.lua:/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/Core/linux-rocky8-nehalem/zlib/1.2.11.lua:/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/Core/linux-rocky8-nehalem/openmpi/5.0.8.lua
+++ export _LMFILES_
+++ _ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0gewptcGkgPSAib3Blbm1waSIsCn0sCm1UID0gewpjaHBjID0gewpmbiA9ICIvdXVmcy9jaHBjLnV0YWguZWR1L3N5cy9tb2R1bGVmaWxlcy9DSFBDLXI4L0NvcmUvY2hwYy8xLjAubHVhIiwKZnVsbE5hbWUgPSAiY2hwYy8xLjAiLApsb2FkT3JkZXIgPSAxLApwcm9wVCA9IHsKbG1vZCA9IHsKc3RpY2t5ID0gMSwKfSwKfSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJjaHBjIiwKd1YgPSAiMDAwMDAwMDAxLip6ZmluYWwiLAp9LApvcGVubXBpID0gewpmbiA9ICIv
+++ export _ModuleTable001_
+++ _ModuleTable002_=dXVmcy9jaHBjLnV0YWguZWR1L3N5cy9tb2R1bGVmaWxlcy9zcGFjay9saW51eC1yb2NreTgteDg2XzY0L0NvcmUvbGludXgtcm9ja3k4LW5laGFsZW0vb3Blbm1waS81LjAuOC5sdWEiLApmdWxsTmFtZSA9ICJvcGVubXBpLzUuMC44IiwKbG9hZE9yZGVyID0gMywKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJvcGVubXBpIiwKd1YgPSAiMDAwMDAwMDA1LjAwMDAwMDAwMC4wMDAwMDAwMDguKnpmaW5hbCIsCn0sCnpsaWIgPSB7CmZuID0gIi91dWZzL2NocGMudXRhaC5lZHUvc3lzL21vZHVsZWZpbGVzL3NwYWNrL2xpbnV4LXJvY2t5OC14ODZfNjQvQ29yZS9saW51eC1yb2NreTgtbmVoYWxlbS96bGliLzEuMi4xMS5s
+++ export _ModuleTable002_
+++ _ModuleTable003_=dWEiLApmdWxsTmFtZSA9ICJ6bGliLzEuMi4xMSIsCmxvYWRPcmRlciA9IDIsCnByb3BUID0ge30sCnJlZl9jb3VudCA9IDEsCnN0YWNrRGVwdGggPSAxLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiemxpYi8xLjIuMTEiLAp3ViA9ICIwMDAwMDAwMDEuMDAwMDAwMDAyLjAwMDAwMDAxMS4qemZpbmFsIiwKfSwKfSwKbXBhdGhBID0gewoKIi91dWZzL2NocGMudXRhaC5lZHUvc3lzL21vZHVsZWZpbGVzL3NwYWNrL2xpbnV4LXJvY2t5OC14ODZfNjQvTVBJL2xpbnV4LXJvY2t5OC1za3lsYWtlX2F2eDUxMi9nY2MvOC41LjAvb3Blbm1waS81LjAuOCIKLCAiL3V1ZnMvY2hwYy51dGFoLmVkdS9zeXMvbW9kdWxlZmlsZXMvQ0hQQy1yOC9NUEkvZ2NjLzguNS4wL29wZW5t
+++ export _ModuleTable003_
+++ _ModuleTable004_=cGkvNS4wLjgiCiwgIi91dWZzL2NocGMudXRhaC5lZHUvc3lzL21vZHVsZWZpbGVzL3NwYWNrL2xpbnV4LXJvY2t5OC14ODZfNjQvTVBJL2xpbnV4LXJvY2t5OC1uZWhhbGVtL0NvcmUvb3Blbm1waS81LjAuOCIKLCAiL3V1ZnMvY2hwYy51dGFoLmVkdS9zeXMvbW9kdWxlZmlsZXMvc3BhY2svbGludXgtcm9ja3k4LXg4Nl82NC9Db3JlL2xpbnV4LXJvY2t5OC1uZWhhbGVtIgosICIvdXVmcy9jaHBjLnV0YWguZWR1L3N5cy9tb2R1bGVmaWxlcy9zcGFjay9saW51eC1yb2NreTgteDg2XzY0L0NvcmUvbGludXgtcm9ja3k4LXg4Nl82NCIKLCAiL3Vzci9zaGFyZS9Nb2R1bGVzL21vZHVsZWZpbGVzIiwgIi9ldGMvbW9kdWxlZmlsZXMiLCAiL3Vzci9zaGFyZS9tb2R1bGVmaWxlcyIK
+++ export _ModuleTable004_
+++ _ModuleTable005_=LCAiL3V1ZnMvY2hwYy51dGFoLmVkdS9zeXMvbW9kdWxlZmlsZXMvQ0hQQy1yOC9MaW51eCIKLCAiL3V1ZnMvY2hwYy51dGFoLmVkdS9zeXMvbW9kdWxlZmlsZXMvQ0hQQy1yOC9Db3JlIiwgIi91dWZzL2NocGMudXRhaC5lZHUvc3lzL2luc3RhbGxkaXIvbG1vZC84LjYtcjgvbW9kdWxlZmlsZXMvQ29yZSIsCn0sCnN5c3RlbUJhc2VNUEFUSCA9ICIvdXVmcy9jaHBjLnV0YWguZWR1L3N5cy9tb2R1bGVmaWxlcy9zcGFjay9saW51eC1yb2NreTgteDg2XzY0L0NvcmUvbGludXgtcm9ja3k4LW5laGFsZW06L3V1ZnMvY2hwYy51dGFoLmVkdS9zeXMvbW9kdWxlZmlsZXMvc3BhY2svbGludXgtcm9ja3k4LXg4Nl82NC9Db3JlL2xpbnV4LXJvY2t5OC14ODZfNjQ6L3Vzci9zaGFyZS9N
+++ export _ModuleTable005_
+++ _ModuleTable006_=b2R1bGVzL21vZHVsZWZpbGVzOi9ldGMvbW9kdWxlZmlsZXM6L3Vzci9zaGFyZS9tb2R1bGVmaWxlczovdXVmcy9jaHBjLnV0YWguZWR1L3N5cy9tb2R1bGVmaWxlcy9DSFBDLXI4L0xpbnV4Oi91dWZzL2NocGMudXRhaC5lZHUvc3lzL21vZHVsZWZpbGVzL0NIUEMtcjgvQ29yZTovdXVmcy9jaHBjLnV0YWguZWR1L3N5cy9pbnN0YWxsZGlyL2xtb2QvOC42LXI4L21vZHVsZWZpbGVzL0NvcmUiLAp9Cg==
+++ export _ModuleTable006_
+++ _ModuleTable_Sz_=6
+++ export _ModuleTable_Sz_
+++ : -s sh
++ eval
++ mpicc -o ring ring.c
++ mpirun ./ring
++ tee -a ring.grn059.592097.log
+I am 0 of 8 on grn059
+I am 6 of 8 on grn059
+I am 4 of 8 on grn059
+I am 5 of 8 on grn059
+I am 2 of 8 on grn059
+I am 7 of 8 on grn059
+I am 3 of 8 on grn059
+I am 1 of 8 on grn059
+Ring Communication: Message Size = 1; 0.019 Gbytes/sec; Time = 0.066 sec; 
+Ring Communication: Message Size = 8; 0.094 Gbytes/sec; Time = 0.100 sec; 
+Ring Communication: Message Size = 64; 0.480 Gbytes/sec; Time = 0.104 sec; 
+Ring Communication: Message Size = 512; 1.993 Gbytes/sec; Time = 0.054 sec; 
+Ring Communication: Message Size = 4096; 3.000 Gbytes/sec; Time = 0.042 sec; 
+slurmstepd: error: *** JOB 592097 ON grn059 CANCELLED AT 2025-11-26T17:36:33 DUE TO TIME LIMIT ***

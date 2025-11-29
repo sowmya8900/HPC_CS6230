@@ -1,0 +1,17 @@
+*** Assigned Granite Node:  grn055
+CG on 2 processes
+N=1000; Sequential CG passed correctness; converged in 13 iterations; time taken: 0.055133 secs
+N=1000; Parallel CG passed correctness; converged in 13 iterations; time taken: 0.028668 secs
+Speedup from parallel execution on 2 processes:1.923136
+CG on 4 processes
+N=1000; Sequential CG passed correctness; converged in 13 iterations; time taken: 0.056290 secs
+N=1000; Parallel CG passed correctness; converged in 13 iterations; time taken: 0.014760 secs
+Speedup from parallel execution on 4 processes:3.813816
+CG on 8 processes
+N=1000; Sequential CG passed correctness; converged in 13 iterations; time taken: 0.066713 secs
+N=1000; Parallel CG passed correctness; converged in 13 iterations; time taken: 0.008743 secs
+Speedup from parallel execution on 8 processes:7.630595
+CG on 16 processes
+N=1000; Sequential CG passed correctness; converged in 13 iterations; time taken: 0.055984 secs
+N=1000; Parallel CG passed correctness; converged in 13 iterations; time taken: 0.014873 secs
+Speedup from parallel execution on 16 processes:3.764223

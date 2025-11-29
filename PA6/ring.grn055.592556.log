@@ -1,0 +1,17 @@
+*** Assigned Granite Node:  grn055
+I am 3 of 8 on grn055
+I am 0 of 8 on grn055
+I am 5 of 8 on grn055
+I am 4 of 8 on grn055
+I am 7 of 8 on grn055
+I am 6 of 8 on grn055
+I am 2 of 8 on grn055
+I am 1 of 8 on grn055
+Ring Communication: Message Size = 1; 0.015 Gbytes/sec; Time = 0.082 sec; 
+Ring Communication: Message Size = 8; 0.086 Gbytes/sec; Time = 0.111 sec; 
+Ring Communication: Message Size = 64; 0.460 Gbytes/sec; Time = 0.108 sec; 
+Ring Communication: Message Size = 512; 2.021 Gbytes/sec; Time = 0.053 sec; 
+Ring Communication: Message Size = 4096; 2.255 Gbytes/sec; Time = 0.056 sec; 
+Ring Communication: Message Size = 32768; 4.299 Gbytes/sec; Time = 0.030 sec; 
+Ring Communication: Message Size = 262144; 4.767 Gbytes/sec; Time = 0.028 sec; 
+Ring Communication: Message Size = 1048576; 4.176 Gbytes/sec; Time = 0.032 sec; 
