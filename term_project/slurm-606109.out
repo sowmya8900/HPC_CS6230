@@ -1,0 +1,26 @@
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
++ tee abt.cpu.grn055.606109.log
++ echo '*** Assigned Granite Node: ' grn055
+*** Assigned Granite Node:  grn055
++ cc -O3 -fopenmp -o abt_cpu abt_main.c abt_par.c
++ ./abt_cpu
++ ./abt_cpu
++ ./abt_cpu
++ ./abt_cpu
++ ./abt_cpu
++ ./abt_cpu
++ ./abt_cpu
++ ./abt_cpu
++ ./abt_cpu
++ ./abt_cpu
++ ./abt_cpu
++ ./abt_cpu
++ ./abt_cpu
++ ./abt_cpu

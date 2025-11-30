@@ -1,0 +1,15 @@
+*** Assigned Granite Node:  grn075
+Specify Matrix dimension Ni, Nj, Nk: ABt <Ni=16384,Nj=8192,Nk=256>: Over 5 trials, Min_GFLOPS: 5175.38; Max_GFLOPS: 5179.439429
+Specify Matrix dimension Ni, Nj, Nk: ABt <Ni=8192,Nj=16384,Nk=256>: Over 5 trials, Min_GFLOPS: 5184.45; Max_GFLOPS: 5187.008036
+Specify Matrix dimension Ni, Nj, Nk: ABt <Ni=16384,Nj=16384,Nk=128>: Over 5 trials, Min_GFLOPS: 5172.32; Max_GFLOPS: 5184.929128
+Specify Matrix dimension Ni, Nj, Nk: ABt <Ni=8192,Nj=8192,Nk=512>: Over 5 trials, Min_GFLOPS: 5172.86; Max_GFLOPS: 5183.540138
+Specify Matrix dimension Ni, Nj, Nk: ABt <Ni=2048,Nj=2048,Nk=8192>: Over 5 trials, Min_GFLOPS: 5128.23; Max_GFLOPS: 5142.762019
+Specify Matrix dimension Ni, Nj, Nk: ABt <Ni=512,Nj=512,Nk=131072>: Over 5 trials, Min_GFLOPS: 4165.81; Max_GFLOPS: 4176.594227
+Specify Matrix dimension Ni, Nj, Nk: ABt <Ni=256,Nj=256,Nk=524288>: Over 5 trials, Min_GFLOPS: 2750.18; Max_GFLOPS: 2767.522004
+Specify Matrix dimension Ni, Nj, Nk: ABt <Ni=16377,Nj=7777,Nk=257>: Over 5 trials, Min_GFLOPS: 5428.48; Max_GFLOPS: 5438.294530
+Specify Matrix dimension Ni, Nj, Nk: ABt <Ni=7777,Nj=16377,Nk=257>: Over 5 trials, Min_GFLOPS: 5436.46; Max_GFLOPS: 5448.578271
+Specify Matrix dimension Ni, Nj, Nk: ABt <Ni=15677,Nj=15677,Nk=131>: Over 5 trials, Min_GFLOPS: 5394.82; Max_GFLOPS: 5408.648680
+Specify Matrix dimension Ni, Nj, Nk: ABt <Ni=7777,Nj=7777,Nk=777>: Over 5 trials, Min_GFLOPS: 5801.06; Max_GFLOPS: 5817.486249
+Specify Matrix dimension Ni, Nj, Nk: ABt <Ni=1999,Nj=1999,Nk=33333>: Over 5 trials, Min_GFLOPS: 5786.35; Max_GFLOPS: 5802.044961
+Specify Matrix dimension Ni, Nj, Nk: ABt <Ni=511,Nj=511,Nk=13111>: Over 5 trials, Min_GFLOPS: 4776.06; Max_GFLOPS: 4841.879379
+Specify Matrix dimension Ni, Nj, Nk: ABt <Ni=131,Nj=131,Nk=55557>: Over 5 trials, Min_GFLOPS: 1148.91; Max_GFLOPS: 1166.957552

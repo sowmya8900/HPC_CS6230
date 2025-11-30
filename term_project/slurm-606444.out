@@ -1,0 +1,91 @@
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
++ tee abt.gpu.grn075.606444.log
++ echo '*** Assigned Granite Node: ' grn075
+*** Assigned Granite Node:  grn075
++ module load cuda
+++ /uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8/libexec/lmod bash load cuda
++ eval '__LMOD_REF_COUNT_CMAKE_PREFIX_PATH=/uufs/chpc.utah.edu/sys/spack/linux-rocky8-nehalem/gcc-8.5.0/cuda-11.6.2-hgkn7czv7ciyy3gtpazwk2s72msbw6l2:1;' export '__LMOD_REF_COUNT_CMAKE_PREFIX_PATH;' 'CMAKE_PREFIX_PATH=/uufs/chpc.utah.edu/sys/spack/linux-rocky8-nehalem/gcc-8.5.0/cuda-11.6.2-hgkn7czv7ciyy3gtpazwk2s72msbw6l2;' export 'CMAKE_PREFIX_PATH;' '__LMOD_REF_COUNT_CPLUS_INCLUDE_PATH=/uufs/chpc.utah.edu/sys/spack/linux-rocky8-nehalem/gcc-8.5.0/cuda-11.6.2-hgkn7czv7ciyy3gtpazwk2s72msbw6l2/include:1;' export '__LMOD_REF_COUNT_CPLUS_INCLUDE_PATH;' 'CPLUS_INCLUDE_PATH=/uufs/chpc.utah.edu/sys/spack/linux-rocky8-nehalem/gcc-8.5.0/cuda-11.6.2-hgkn7czv7ciyy3gtpazwk2s72msbw6l2/include;' export 'CPLUS_INCLUDE_PATH;' 'CUDA_HOME=/uufs/chpc.utah.edu/sys/spack/linux-rocky8-nehalem/gcc-8.5.0/cuda-11.6.2-hgkn7czv7ciyy3gtpazwk2s72msbw6l2;' export 'CUDA_HOME;' 'CUDA_ROOT=/uufs/chpc.utah.edu/sys/spack/linux-rocky8-nehalem/gcc-8.5.0/cuda-11.6.2-hgkn7czv7ciyy3gtpazwk2s72msbw6l2;' export 'CUDA_ROOT;' '__LMOD_REF_COUNT_C_INCLUDE_PATH=/uufs/chpc.utah.edu/sys/spack/linux-rocky8-nehalem/gcc-8.5.0/cuda-11.6.2-hgkn7czv7ciyy3gtpazwk2s72msbw6l2/include:1;' export '__LMOD_REF_COUNT_C_INCLUDE_PATH;' 'C_INCLUDE_PATH=/uufs/chpc.utah.edu/sys/spack/linux-rocky8-nehalem/gcc-8.5.0/cuda-11.6.2-hgkn7czv7ciyy3gtpazwk2s72msbw6l2/include;' export 'C_INCLUDE_PATH;' '__LMOD_REF_COUNT_INCLUDE=/uufs/chpc.utah.edu/sys/spack/linux-rocky8-nehalem/gcc-8.5.0/cuda-11.6.2-hgkn7czv7ciyy3gtpazwk2s72msbw6l2/include:1;' export '__LMOD_REF_COUNT_INCLUDE;' 'INCLUDE=/uufs/chpc.utah.edu/sys/spack/linux-rocky8-nehalem/gcc-8.5.0/cuda-11.6.2-hgkn7czv7ciyy3gtpazwk2s72msbw6l2/include;' export 'INCLUDE;' '__LMOD_REF_COUNT_LD_LIBRARY_PATH=/uufs/chpc.utah.edu/sys/spack/linux-rocky8-nehalem/gcc-8.5.0/cuda-11.6.2-hgkn7czv7ciyy3gtpazwk2s72msbw6l2/lib64:1\;/uufs/granite/sys/installdir/slurm/std/lib:3;' export '__LMOD_REF_COUNT_LD_LIBRARY_PATH;' 'LD_LIBRARY_PATH=/uufs/chpc.utah.edu/sys/spack/linux-rocky8-nehalem/gcc-8.5.0/cuda-11.6.2-hgkn7czv7ciyy3gtpazwk2s72msbw6l2/lib64:/uufs/granite/sys/installdir/slurm/std/lib;' export 'LD_LIBRARY_PATH;' '__LMOD_REF_COUNT_LIBRARY_PATH=/uufs/chpc.utah.edu/sys/spack/linux-rocky8-nehalem/gcc-8.5.0/cuda-11.6.2-hgkn7czv7ciyy3gtpazwk2s72msbw6l2/lib64:1;' export '__LMOD_REF_COUNT_LIBRARY_PATH;' 'LIBRARY_PATH=/uufs/chpc.utah.edu/sys/spack/linux-rocky8-nehalem/gcc-8.5.0/cuda-11.6.2-hgkn7czv7ciyy3gtpazwk2s72msbw6l2/lib64;' export 'LIBRARY_PATH;' 'LMOD_FAMILY_CUDA=cuda;' export 'LMOD_FAMILY_CUDA;' 'LMOD_FAMILY_CUDA_VERSION=11.6.2;' export 'LMOD_FAMILY_CUDA_VERSION;' '__LMOD_REF_COUNT_LOADEDMODULES=chpc/1.0:1\;cuda/11.6.2:1;' export '__LMOD_REF_COUNT_LOADEDMODULES;' 'LOADEDMODULES=chpc/1.0:cuda/11.6.2;' export 'LOADEDMODULES;' '__LMOD_REF_COUNT_MODULEPATH=/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/Compiler/linux-rocky8-nehalem/cuda/11.6.2:1\;/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/Core/linux-rocky8-nehalem:3\;/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/Core/linux-rocky8-x86_64:3\;/usr/share/Modules/modulefiles:1\;/etc/modulefiles:1\;/usr/share/modulefiles:1\;/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Linux:1\;/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Core:1\;/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8/modulefiles/Core:1;' export '__LMOD_REF_COUNT_MODULEPATH;' 'MODULEPATH=/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/Compiler/linux-rocky8-nehalem/cuda/11.6.2:/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/Core/linux-rocky8-nehalem:/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/Core/linux-rocky8-x86_64:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles:/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Linux:/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Core:/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8/modulefiles/Core;' export 'MODULEPATH;' '__LMOD_REF_COUNT_PATH=/uufs/chpc.utah.edu/sys/spack/linux-rocky8-nehalem/gcc-8.5.0/cuda-11.6.2-hgkn7czv7ciyy3gtpazwk2s72msbw6l2/bin:1\;/uufs/chpc.utah.edu/common/home/u1591673/ior-install/bin:1\;/uufs/chpc.utah.edu/common/home/u1591673/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/bin/remote-cli:1\;/uufs/chpc.utah.edu/sys/bin:1\;/usr/share/Modules/bin:1\;/usr/local/bin:1\;/usr/bin:1\;/usr/local/sbin:1\;/usr/sbin:1\;/uufs/chpc.utah.edu/common/home/u1591673/.dotnet/tools:1\;/uufs/granite/sys/installdir/slurm/std/bin:3\;/uufs/chpc.utah.edu/common/home/u1591673/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:1\;/uufs/chpc.utah.edu/common/home/u1591673/.local/bin:2;' export '__LMOD_REF_COUNT_PATH;' 'PATH=/uufs/chpc.utah.edu/sys/spack/linux-rocky8-nehalem/gcc-8.5.0/cuda-11.6.2-hgkn7czv7ciyy3gtpazwk2s72msbw6l2/bin:/uufs/chpc.utah.edu/common/home/u1591673/ior-install/bin:/uufs/chpc.utah.edu/common/home/u1591673/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/bin/remote-cli:/uufs/chpc.utah.edu/sys/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/uufs/chpc.utah.edu/common/home/u1591673/.dotnet/tools:/uufs/granite/sys/installdir/slurm/std/bin:/uufs/chpc.utah.edu/common/home/u1591673/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/uufs/chpc.utah.edu/common/home/u1591673/.local/bin;' export 'PATH;' '__LMOD_REF_COUNT__LMFILES_=/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Core/chpc/1.0.lua:1\;/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/Core/linux-rocky8-nehalem/cuda/11.6.2.lua:1;' export '__LMOD_REF_COUNT__LMFILES_;' '_LMFILES_=/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Core/chpc/1.0.lua:/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/Core/linux-rocky8-nehalem/cuda/11.6.2.lua;' export '_LMFILES_;' '_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0gewpjdWRhID0gImN1ZGEiLAp9LAptVCA9IHsKY2hwYyA9IHsKZm4gPSAiL3V1ZnMvY2hwYy51dGFoLmVkdS9zeXMvbW9kdWxlZmlsZXMvQ0hQQy1yOC9Db3JlL2NocGMvMS4wLmx1YSIsCmZ1bGxOYW1lID0gImNocGMvMS4wIiwKbG9hZE9yZGVyID0gMSwKcHJvcFQgPSB7Cmxtb2QgPSB7CnN0aWNreSA9IDEsCn0sCn0sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiY2hwYyIsCndWID0gIjAwMDAwMDAwMS4qemZpbmFsIiwKfSwKY3VkYSA9IHsKZm4gPSAiL3V1ZnMv;' export '_ModuleTable001_;' '_ModuleTable002_=Y2hwYy51dGFoLmVkdS9zeXMvbW9kdWxlZmlsZXMvc3BhY2svbGludXgtcm9ja3k4LXg4Nl82NC9Db3JlL2xpbnV4LXJvY2t5OC1uZWhhbGVtL2N1ZGEvMTEuNi4yLmx1YSIsCmZ1bGxOYW1lID0gImN1ZGEvMTEuNi4yIiwKbG9hZE9yZGVyID0gMiwKcHJvcFQgPSB7CmFyY2ggPSB7CmdwdSA9IDEsCn0sCn0sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiY3VkYSIsCndWID0gIl4wMDAwMDAxMS4wMDAwMDAwMDYuMDAwMDAwMDAyLip6ZmluYWwiLAp9LAp9LAptcGF0aEEgPSB7CgoiL3V1ZnMvY2hwYy51dGFoLmVkdS9zeXMvbW9kdWxlZmlsZXMvc3BhY2svbGludXgtcm9ja3k4LXg4Nl82NC9Db21waWxlci9saW51eC1yb2NreTgtbmVoYWxl;' export '_ModuleTable002_;' '_ModuleTable003_=bS9jdWRhLzExLjYuMiIKLCAiL3V1ZnMvY2hwYy51dGFoLmVkdS9zeXMvbW9kdWxlZmlsZXMvc3BhY2svbGludXgtcm9ja3k4LXg4Nl82NC9Db3JlL2xpbnV4LXJvY2t5OC1uZWhhbGVtIgosICIvdXVmcy9jaHBjLnV0YWguZWR1L3N5cy9tb2R1bGVmaWxlcy9zcGFjay9saW51eC1yb2NreTgteDg2XzY0L0NvcmUvbGludXgtcm9ja3k4LXg4Nl82NCIKLCAiL3Vzci9zaGFyZS9Nb2R1bGVzL21vZHVsZWZpbGVzIiwgIi9ldGMvbW9kdWxlZmlsZXMiLCAiL3Vzci9zaGFyZS9tb2R1bGVmaWxlcyIKLCAiL3V1ZnMvY2hwYy51dGFoLmVkdS9zeXMvbW9kdWxlZmlsZXMvQ0hQQy1yOC9MaW51eCIKLCAiL3V1ZnMvY2hwYy51dGFoLmVkdS9zeXMvbW9kdWxlZmlsZXMvQ0hQQy1yOC9Db3Jl;' export '_ModuleTable003_;' '_ModuleTable004_=IiwgIi91dWZzL2NocGMudXRhaC5lZHUvc3lzL2luc3RhbGxkaXIvbG1vZC84LjYtcjgvbW9kdWxlZmlsZXMvQ29yZSIsCn0sCnN5c3RlbUJhc2VNUEFUSCA9ICIvdXVmcy9jaHBjLnV0YWguZWR1L3N5cy9tb2R1bGVmaWxlcy9zcGFjay9saW51eC1yb2NreTgteDg2XzY0L0NvcmUvbGludXgtcm9ja3k4LW5laGFsZW06L3V1ZnMvY2hwYy51dGFoLmVkdS9zeXMvbW9kdWxlZmlsZXMvc3BhY2svbGludXgtcm9ja3k4LXg4Nl82NC9Db3JlL2xpbnV4LXJvY2t5OC14ODZfNjQ6L3Vzci9zaGFyZS9Nb2R1bGVzL21vZHVsZWZpbGVzOi9ldGMvbW9kdWxlZmlsZXM6L3Vzci9zaGFyZS9tb2R1bGVmaWxlczovdXVmcy9jaHBjLnV0YWguZWR1L3N5cy9tb2R1bGVmaWxlcy9DSFBDLXI4L0xp;' export '_ModuleTable004_;' '_ModuleTable005_=bnV4Oi91dWZzL2NocGMudXRhaC5lZHUvc3lzL21vZHVsZWZpbGVzL0NIUEMtcjgvQ29yZTovdXVmcy9jaHBjLnV0YWguZWR1L3N5cy9pbnN0YWxsZGlyL2xtb2QvOC42LXI4L21vZHVsZWZpbGVzL0NvcmUiLAp9Cg==;' export '_ModuleTable005_;' '_ModuleTable_Sz_=5;' export '_ModuleTable_Sz_;'
+++ __LMOD_REF_COUNT_CMAKE_PREFIX_PATH=/uufs/chpc.utah.edu/sys/spack/linux-rocky8-nehalem/gcc-8.5.0/cuda-11.6.2-hgkn7czv7ciyy3gtpazwk2s72msbw6l2:1
+++ export __LMOD_REF_COUNT_CMAKE_PREFIX_PATH
+++ CMAKE_PREFIX_PATH=/uufs/chpc.utah.edu/sys/spack/linux-rocky8-nehalem/gcc-8.5.0/cuda-11.6.2-hgkn7czv7ciyy3gtpazwk2s72msbw6l2
+++ export CMAKE_PREFIX_PATH
+++ __LMOD_REF_COUNT_CPLUS_INCLUDE_PATH=/uufs/chpc.utah.edu/sys/spack/linux-rocky8-nehalem/gcc-8.5.0/cuda-11.6.2-hgkn7czv7ciyy3gtpazwk2s72msbw6l2/include:1
+++ export __LMOD_REF_COUNT_CPLUS_INCLUDE_PATH
+++ CPLUS_INCLUDE_PATH=/uufs/chpc.utah.edu/sys/spack/linux-rocky8-nehalem/gcc-8.5.0/cuda-11.6.2-hgkn7czv7ciyy3gtpazwk2s72msbw6l2/include
+++ export CPLUS_INCLUDE_PATH
+++ CUDA_HOME=/uufs/chpc.utah.edu/sys/spack/linux-rocky8-nehalem/gcc-8.5.0/cuda-11.6.2-hgkn7czv7ciyy3gtpazwk2s72msbw6l2
+++ export CUDA_HOME
+++ CUDA_ROOT=/uufs/chpc.utah.edu/sys/spack/linux-rocky8-nehalem/gcc-8.5.0/cuda-11.6.2-hgkn7czv7ciyy3gtpazwk2s72msbw6l2
+++ export CUDA_ROOT
+++ __LMOD_REF_COUNT_C_INCLUDE_PATH=/uufs/chpc.utah.edu/sys/spack/linux-rocky8-nehalem/gcc-8.5.0/cuda-11.6.2-hgkn7czv7ciyy3gtpazwk2s72msbw6l2/include:1
+++ export __LMOD_REF_COUNT_C_INCLUDE_PATH
+++ C_INCLUDE_PATH=/uufs/chpc.utah.edu/sys/spack/linux-rocky8-nehalem/gcc-8.5.0/cuda-11.6.2-hgkn7czv7ciyy3gtpazwk2s72msbw6l2/include
+++ export C_INCLUDE_PATH
+++ __LMOD_REF_COUNT_INCLUDE=/uufs/chpc.utah.edu/sys/spack/linux-rocky8-nehalem/gcc-8.5.0/cuda-11.6.2-hgkn7czv7ciyy3gtpazwk2s72msbw6l2/include:1
+++ export __LMOD_REF_COUNT_INCLUDE
+++ INCLUDE=/uufs/chpc.utah.edu/sys/spack/linux-rocky8-nehalem/gcc-8.5.0/cuda-11.6.2-hgkn7czv7ciyy3gtpazwk2s72msbw6l2/include
+++ export INCLUDE
+++ __LMOD_REF_COUNT_LD_LIBRARY_PATH='/uufs/chpc.utah.edu/sys/spack/linux-rocky8-nehalem/gcc-8.5.0/cuda-11.6.2-hgkn7czv7ciyy3gtpazwk2s72msbw6l2/lib64:1;/uufs/granite/sys/installdir/slurm/std/lib:3'
+++ export __LMOD_REF_COUNT_LD_LIBRARY_PATH
+++ LD_LIBRARY_PATH=/uufs/chpc.utah.edu/sys/spack/linux-rocky8-nehalem/gcc-8.5.0/cuda-11.6.2-hgkn7czv7ciyy3gtpazwk2s72msbw6l2/lib64:/uufs/granite/sys/installdir/slurm/std/lib
+++ export LD_LIBRARY_PATH
+++ __LMOD_REF_COUNT_LIBRARY_PATH=/uufs/chpc.utah.edu/sys/spack/linux-rocky8-nehalem/gcc-8.5.0/cuda-11.6.2-hgkn7czv7ciyy3gtpazwk2s72msbw6l2/lib64:1
+++ export __LMOD_REF_COUNT_LIBRARY_PATH
+++ LIBRARY_PATH=/uufs/chpc.utah.edu/sys/spack/linux-rocky8-nehalem/gcc-8.5.0/cuda-11.6.2-hgkn7czv7ciyy3gtpazwk2s72msbw6l2/lib64
+++ export LIBRARY_PATH
+++ LMOD_FAMILY_CUDA=cuda
+++ export LMOD_FAMILY_CUDA
+++ LMOD_FAMILY_CUDA_VERSION=11.6.2
+++ export LMOD_FAMILY_CUDA_VERSION
+++ __LMOD_REF_COUNT_LOADEDMODULES='chpc/1.0:1;cuda/11.6.2:1'
+++ export __LMOD_REF_COUNT_LOADEDMODULES
+++ LOADEDMODULES=chpc/1.0:cuda/11.6.2
+++ export LOADEDMODULES
+++ __LMOD_REF_COUNT_MODULEPATH='/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/Compiler/linux-rocky8-nehalem/cuda/11.6.2:1;/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/Core/linux-rocky8-nehalem:3;/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/Core/linux-rocky8-x86_64:3;/usr/share/Modules/modulefiles:1;/etc/modulefiles:1;/usr/share/modulefiles:1;/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Linux:1;/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Core:1;/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8/modulefiles/Core:1'
+++ export __LMOD_REF_COUNT_MODULEPATH
+++ MODULEPATH=/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/Compiler/linux-rocky8-nehalem/cuda/11.6.2:/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/Core/linux-rocky8-nehalem:/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/Core/linux-rocky8-x86_64:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles:/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Linux:/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Core:/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8/modulefiles/Core
+++ export MODULEPATH
+++ __LMOD_REF_COUNT_PATH='/uufs/chpc.utah.edu/sys/spack/linux-rocky8-nehalem/gcc-8.5.0/cuda-11.6.2-hgkn7czv7ciyy3gtpazwk2s72msbw6l2/bin:1;/uufs/chpc.utah.edu/common/home/u1591673/ior-install/bin:1;/uufs/chpc.utah.edu/common/home/u1591673/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/bin/remote-cli:1;/uufs/chpc.utah.edu/sys/bin:1;/usr/share/Modules/bin:1;/usr/local/bin:1;/usr/bin:1;/usr/local/sbin:1;/usr/sbin:1;/uufs/chpc.utah.edu/common/home/u1591673/.dotnet/tools:1;/uufs/granite/sys/installdir/slurm/std/bin:3;/uufs/chpc.utah.edu/common/home/u1591673/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:1;/uufs/chpc.utah.edu/common/home/u1591673/.local/bin:2'
+++ export __LMOD_REF_COUNT_PATH
+++ PATH=/uufs/chpc.utah.edu/sys/spack/linux-rocky8-nehalem/gcc-8.5.0/cuda-11.6.2-hgkn7czv7ciyy3gtpazwk2s72msbw6l2/bin:/uufs/chpc.utah.edu/common/home/u1591673/ior-install/bin:/uufs/chpc.utah.edu/common/home/u1591673/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/bin/remote-cli:/uufs/chpc.utah.edu/sys/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/uufs/chpc.utah.edu/common/home/u1591673/.dotnet/tools:/uufs/granite/sys/installdir/slurm/std/bin:/uufs/chpc.utah.edu/common/home/u1591673/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/uufs/chpc.utah.edu/common/home/u1591673/.local/bin
+++ export PATH
+++ __LMOD_REF_COUNT__LMFILES_='/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Core/chpc/1.0.lua:1;/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/Core/linux-rocky8-nehalem/cuda/11.6.2.lua:1'
+++ export __LMOD_REF_COUNT__LMFILES_
+++ _LMFILES_=/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Core/chpc/1.0.lua:/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/Core/linux-rocky8-nehalem/cuda/11.6.2.lua
+++ export _LMFILES_
+++ _ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0gewpjdWRhID0gImN1ZGEiLAp9LAptVCA9IHsKY2hwYyA9IHsKZm4gPSAiL3V1ZnMvY2hwYy51dGFoLmVkdS9zeXMvbW9kdWxlZmlsZXMvQ0hQQy1yOC9Db3JlL2NocGMvMS4wLmx1YSIsCmZ1bGxOYW1lID0gImNocGMvMS4wIiwKbG9hZE9yZGVyID0gMSwKcHJvcFQgPSB7Cmxtb2QgPSB7CnN0aWNreSA9IDEsCn0sCn0sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiY2hwYyIsCndWID0gIjAwMDAwMDAwMS4qemZpbmFsIiwKfSwKY3VkYSA9IHsKZm4gPSAiL3V1ZnMv
+++ export _ModuleTable001_
+++ _ModuleTable002_=Y2hwYy51dGFoLmVkdS9zeXMvbW9kdWxlZmlsZXMvc3BhY2svbGludXgtcm9ja3k4LXg4Nl82NC9Db3JlL2xpbnV4LXJvY2t5OC1uZWhhbGVtL2N1ZGEvMTEuNi4yLmx1YSIsCmZ1bGxOYW1lID0gImN1ZGEvMTEuNi4yIiwKbG9hZE9yZGVyID0gMiwKcHJvcFQgPSB7CmFyY2ggPSB7CmdwdSA9IDEsCn0sCn0sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiY3VkYSIsCndWID0gIl4wMDAwMDAxMS4wMDAwMDAwMDYuMDAwMDAwMDAyLip6ZmluYWwiLAp9LAp9LAptcGF0aEEgPSB7CgoiL3V1ZnMvY2hwYy51dGFoLmVkdS9zeXMvbW9kdWxlZmlsZXMvc3BhY2svbGludXgtcm9ja3k4LXg4Nl82NC9Db21waWxlci9saW51eC1yb2NreTgtbmVoYWxl
+++ export _ModuleTable002_
+++ _ModuleTable003_=bS9jdWRhLzExLjYuMiIKLCAiL3V1ZnMvY2hwYy51dGFoLmVkdS9zeXMvbW9kdWxlZmlsZXMvc3BhY2svbGludXgtcm9ja3k4LXg4Nl82NC9Db3JlL2xpbnV4LXJvY2t5OC1uZWhhbGVtIgosICIvdXVmcy9jaHBjLnV0YWguZWR1L3N5cy9tb2R1bGVmaWxlcy9zcGFjay9saW51eC1yb2NreTgteDg2XzY0L0NvcmUvbGludXgtcm9ja3k4LXg4Nl82NCIKLCAiL3Vzci9zaGFyZS9Nb2R1bGVzL21vZHVsZWZpbGVzIiwgIi9ldGMvbW9kdWxlZmlsZXMiLCAiL3Vzci9zaGFyZS9tb2R1bGVmaWxlcyIKLCAiL3V1ZnMvY2hwYy51dGFoLmVkdS9zeXMvbW9kdWxlZmlsZXMvQ0hQQy1yOC9MaW51eCIKLCAiL3V1ZnMvY2hwYy51dGFoLmVkdS9zeXMvbW9kdWxlZmlsZXMvQ0hQQy1yOC9Db3Jl
+++ export _ModuleTable003_
+++ _ModuleTable004_=IiwgIi91dWZzL2NocGMudXRhaC5lZHUvc3lzL2luc3RhbGxkaXIvbG1vZC84LjYtcjgvbW9kdWxlZmlsZXMvQ29yZSIsCn0sCnN5c3RlbUJhc2VNUEFUSCA9ICIvdXVmcy9jaHBjLnV0YWguZWR1L3N5cy9tb2R1bGVmaWxlcy9zcGFjay9saW51eC1yb2NreTgteDg2XzY0L0NvcmUvbGludXgtcm9ja3k4LW5laGFsZW06L3V1ZnMvY2hwYy51dGFoLmVkdS9zeXMvbW9kdWxlZmlsZXMvc3BhY2svbGludXgtcm9ja3k4LXg4Nl82NC9Db3JlL2xpbnV4LXJvY2t5OC14ODZfNjQ6L3Vzci9zaGFyZS9Nb2R1bGVzL21vZHVsZWZpbGVzOi9ldGMvbW9kdWxlZmlsZXM6L3Vzci9zaGFyZS9tb2R1bGVmaWxlczovdXVmcy9jaHBjLnV0YWguZWR1L3N5cy9tb2R1bGVmaWxlcy9DSFBDLXI4L0xp
+++ export _ModuleTable004_
+++ _ModuleTable005_=bnV4Oi91dWZzL2NocGMudXRhaC5lZHUvc3lzL21vZHVsZWZpbGVzL0NIUEMtcjgvQ29yZTovdXVmcy9jaHBjLnV0YWguZWR1L3N5cy9pbnN0YWxsZGlyL2xtb2QvOC42LXI4L21vZHVsZWZpbGVzL0NvcmUiLAp9Cg==
+++ export _ModuleTable005_
+++ _ModuleTable_Sz_=5
+++ export _ModuleTable_Sz_
+++ : -s sh
++ eval
++ nvcc -O3 -o abt_gpu abt_main.cu abt_launch.cu abt_kernel.cu
++ ./abt_gpu
++ ./abt_gpu
++ ./abt_gpu
++ ./abt_gpu
++ ./abt_gpu
++ ./abt_gpu
++ ./abt_gpu
++ ./abt_gpu
++ ./abt_gpu
++ ./abt_gpu
++ ./abt_gpu
++ ./abt_gpu
++ ./abt_gpu
++ ./abt_gpu
