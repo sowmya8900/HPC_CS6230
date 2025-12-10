@@ -1,0 +1,15 @@
+*** Assigned Granite Node:  grn058
+Enter Matrix dimensions Ni Nj Nk: Ni:16384, Nj:8192, Nk:256, #Threads:128; Best/Worst Performance (GFLOPS): 188.98, 181.47 
+Enter Matrix dimensions Ni Nj Nk: Ni:8192, Nj:16384, Nk:256, #Threads:128; Best/Worst Performance (GFLOPS): 188.36, 180.26 
+Enter Matrix dimensions Ni Nj Nk: Ni:16384, Nj:16384, Nk:128, #Threads:128; Best/Worst Performance (GFLOPS): 188.98, 180.41 
+Enter Matrix dimensions Ni Nj Nk: Ni:8192, Nj:8192, Nk:512, #Threads:128; Best/Worst Performance (GFLOPS): 186.42, 177.87 
+Enter Matrix dimensions Ni Nj Nk: Ni:2048, Nj:2048, Nk:8192, #Threads:128; Best/Worst Performance (GFLOPS): 179.71, 173.73 
+Enter Matrix dimensions Ni Nj Nk: Ni:512, Nj:512, Nk:131072, #Threads:128; Best/Worst Performance (GFLOPS): 94.60, 80.65 
+Enter Matrix dimensions Ni Nj Nk: Ni:256, Nj:256, Nk:524288, #Threads:128; Best/Worst Performance (GFLOPS): 41.58, 40.14 
+Enter Matrix dimensions Ni Nj Nk: Ni:16377, Nj:7777, Nk:257, #Threads:128; Best/Worst Performance (GFLOPS): 199.93, 189.62 
+Enter Matrix dimensions Ni Nj Nk: Ni:7777, Nj:16377, Nk:257, #Threads:128; Best/Worst Performance (GFLOPS): 196.16, 189.13 
+Enter Matrix dimensions Ni Nj Nk: Ni:15677, Nj:15677, Nk:131, #Threads:128; Best/Worst Performance (GFLOPS): 196.58, 187.09 
+Enter Matrix dimensions Ni Nj Nk: Ni:7777, Nj:7777, Nk:777, #Threads:128; Best/Worst Performance (GFLOPS): 204.03, 197.09 
+Enter Matrix dimensions Ni Nj Nk: Ni:1999, Nj:1999, Nk:33333, #Threads:128; Best/Worst Performance (GFLOPS): 227.68, 223.17 
+Enter Matrix dimensions Ni Nj Nk: Ni:511, Nj:511, Nk:13111, #Threads:128; Best/Worst Performance (GFLOPS): 66.16, 57.10 
+Enter Matrix dimensions Ni Nj Nk: Ni:131, Nj:131, Nk:55557, #Threads:128; Best/Worst Performance (GFLOPS): 10.21, 9.44 

@@ -1,0 +1,43 @@
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
++ tee atbt.cpu.grn058.642814.log
++ echo '*** Assigned Granite Node: ' grn058
+*** Assigned Granite Node:  grn058
++ cc -O3 -fopenmp -o atbt_cpu atbt_main.c atbt_par.c
+atbt_par.c: In function ‘atbt_par’:
+atbt_par.c:14:36: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+         double *local_C = (double*)malloc(tile_i * tile_j * sizeof(double));
+                                    ^~~~~~
+atbt_par.c:14:36: warning: incompatible implicit declaration of built-in function ‘malloc’
+atbt_par.c:14:36: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+atbt_par.c:1:1:
++#include <stdlib.h>
+ void atbt_par(const double *__restrict__ A, const double *__restrict__ B, double *__restrict__ C, int Ni, int Nj, int Nk) {
+atbt_par.c:14:36:
+         double *local_C = (double*)malloc(tile_i * tile_j * sizeof(double));
+                                    ^~~~~~
+atbt_par.c:78:9: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+         free(local_C);
+         ^~~~
+atbt_par.c:78:9: warning: incompatible implicit declaration of built-in function ‘free’
+atbt_par.c:78:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
++ ./atbt_cpu
++ ./atbt_cpu
++ ./atbt_cpu
++ ./atbt_cpu
++ ./atbt_cpu
++ ./atbt_cpu
++ ./atbt_cpu
++ ./atbt_cpu
++ ./atbt_cpu
++ ./atbt_cpu
++ ./atbt_cpu
++ ./atbt_cpu
++ ./atbt_cpu
++ ./atbt_cpu
